@@ -1,0 +1,27 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<dom-module id="basic-edit">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'basic-edit',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'basic-edit',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
